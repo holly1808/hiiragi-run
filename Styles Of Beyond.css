@@ -1,0 +1,19 @@
+:root {
+  --theme-color: #01581d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 30px;
+  background: linear-gradient(to right, #e8f6ff, #f3ffeb);/*背景変えるやつ（グラデーション）*/
+  color: #000000; /*文字の色変えるやつ*/
+}
