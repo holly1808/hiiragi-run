@@ -1,5 +1,5 @@
 :root {
-  --theme-color: #01581d;
+  --theme-color: #00949e;
 }
 
 * {
@@ -14,6 +14,76 @@ html, body {
 body {
   margin: 0;
   padding: 30px;
-  background: linear-gradient(to right, #e8f6ff, #f3ffeb);/*背景変えるやつ（グラデーション）*/
   color: #000000; /*文字の色変えるやつ*/
 }
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  transition: color 1s linear;
+ }
+
+h2, h3 {
+  color: var(--theme-color);
+  border-bottom: dashed 0.15em var(--theme-color);
+}
+
+h4 {
+  color: var(--theme-color);
+}
+
+ul {
+  list-style: none;
+}
+li:before {
+  content: "・";
+  color: var(--theme-color);
+}
+
+.comment {
+  display: none;
+}
+
+.botan-type1{/*ボタンの見た目*/
+  background-color:#ffffff;
+  border: 1px solid #000000;
+  border-radius:999px;
+}
+.botan-type1:hover{/*ボタンの見た目　押してる時*/
+  background-color:#a5a5a5
+}
+
+.botan-type2{/*ボタンの見た目*/
+  background-color:#ffffff;
+  border: 1px solid #000000;
+  border-radius:4px;
+}
+.botan-type2:hover{/*ボタンの見た目　押してる時*/
+  background-color:#a5a5a5
+}
+
+.table-rennshuu {/*表の見た目 練習 ここから*/
+  border-spacing: 0;
+  border-collapse: collapse;
+  border: solid 1px #000000;
+  min-width: 70%;
+}
+.table-rennshuu tr {
+  background-color: #ffffff;/*表の本文奇数段*/
+}
+.table-rennshuu tr:nth-child(2n) {
+  background-color: #ffffff;/*表の本文偶数段*/
+}
+.table-rennshuu th {
+  background: var(--theme-color);/*表の見出し*/
+  color: #ffffff;
+}
+.table-rennshuu th, .table-rennshuu td {
+  border: solid 1px #000000; /*表の枠*/
+  padding: 0.5rem;
+}
+
+.table-rennshuu tr:hover {
+  background-color: #cccccc;/*表の行にマウスを乗せたとき*/
+}
+/*表の見た目 練習 ここまで*/
